@@ -1,8 +1,16 @@
-/*
-  Strings.h - Library for creating strings for the TFT touch screen.
-  14 June 2014: Created by Richard Kirkpatrick
-   Revision Log:
-*/
+/*! \mainpage Main Page
+ *
+ * \section intro_sec Introduction
+ * \author Richard Kirkpatrick
+ * \date 17 July 2014
+ * \copyright GNU Public License.
+ *
+ * This is the Arduino library for creating geometries shapes for the Seeed Studio TFT touch screen (Version 1).
+ * The user can create polygons, rectangles, triangle and circles.
+ * See the Wiki documentation page for more info!
+ *
+ *
+ */
 
 #ifndef TouchScreenStrings_h
 #define TouchScreenStrings_h
@@ -22,50 +30,46 @@ public:
 
     /*!
     @brief Default constructor for the TouchScreenText superclass
-    @param [in] xstart The x-coordinate for the text instance.
-    @param [in] ystart The y-coordinate for the text instance.
-    @param [in] fontSize The font size of the text instance.
-    @param [in] textColor The color of the text instance. Default color is WHITE.
     */
     TouchScreenText();
 
     /*!
     @class TouchScreenText
     @brief Parameter constructor for the TouchScreenText superclass
-    @param [in] otherTouchScreenText The text that is to be copied.
+    @param  otherTouchScreenText The text that is to be copied.
     */
     TouchScreenText(TouchScreenText& otherTouchScreenText);
 
 
     /*!
     @brief Parameter constructor for the TouchScreenText superclass
-    @param [in] myXStart The x-coordinate for the text instance.
-    @param [in] myYStart The y-coordinate for the text instance.
-    @param [in] myFontSize The font size of the text instance.
-    @param [in] myTextColor The color of the text instance. Default color is WHITE.
+    @param  myXStart The x-coordinate for the text instance.
+    @param  myYStart The y-coordinate for the text instance.
+    @param  myFontSize The font size of the text instance.
+    @param  myTextColor The color of the text instance. Default color is WHITE.
     */
 
     TouchScreenText(int, int, int, unsigned int);
 
     /*!
     @brief Sets the coordinates of the text.
-    @param [in] myXStart The x-coordinate for the text instance.
-    @param [in] myYStart The y-coordinate for the text instance.
+    @param  myXStart The x-coordinate for the text instance.
+    @param  myYStart The y-coordinate for the text instance.
     */
 
     void setTextCoord(int, int);
 
     /*!
     @brief Sets the font size of the text.
-    @param [in] myFontSize The font size of the text instance.
+    @param  myFontSize The font size of the text instance.
     */
-    void setFontSize(int defaultFontText = 2);
+    void setFontSize(int myFontSize = 2);
 
     /*!
     @brief Sets the color of the text.
-    @param [in] myTextColor The color of the text instance.
+    @param  myTextColor The color of the text instance.
     */
-    void setTextColor(unsigned int textColor = 0xffff);  // Default color is WHITE.
+    void setTextColor(unsigned int myTextColor = 0xffff);  // Default color is WHITE.
 
     /*!
     @brief Gets the xcoordinate of the text.
@@ -92,9 +96,9 @@ public:
     const int getTextColor();
 
 protected:
-  int xstart, ystart; ///< Coordinates of the text
-  int fontSize; ///< Size of the text
-  unsigned int textColor; ///< Color of the text
+  int xstart, ystart; /// Coordinates of the text
+  int fontSize; /// Size of the text
+  unsigned int textColor; /// Color of the text
 };
 
 /*
@@ -111,39 +115,39 @@ class TouchScreenString : public TouchScreenText {
  public:
     /*!
     @brief Default constructor for the TouchScreenString subclass.
-    @param [in] text The text that is to be drawn.
+    @param  text The text that is to be drawn.
     */
     TouchScreenString();
 
     /*!
     @brief Copy constructor for the TouchScreenString superclass
-    @param [in] otherTouchScreenString The string instance that is to be copied.
+    @param  otherTouchScreenString The string instance that is to be copied.
     */
     TouchScreenString(TouchScreenString& otherTouchScreenString);
 
     /*!
     @brief Parameter constructor for the TouchScreenString superclass.
-    @param [in] myText The text that is to be drawn.
-    @param [in] myXStart The x-coordinate for the text instance.
-    @param [in] myYStart The y-coordinate for the text instance.
-    @param [in] myFontSize The font size of the text instance.
-    @param [in] myTextColor The color of the text instance.
+    @param  myText The text that is to be drawn.
+    @param  myXStart The x-coordinate for the text instance.
+    @param  myYStart The y-coordinate for the text instance.
+    @param  myFontSize The font size of the text instance.
+    @param  myTextColor The color of the text instance.
     */
     TouchScreenString(char* myText, int myXStart, int myYStart, int myFontSize, unsigned int myTextColor);
 
     /*!
     @brief Sets the text, coordinates, font size, and text color of the instance.
-    @param [in] myText The text that is to be drawn.
-    @param [in] myXStart The x-coordinate for the text instance.
-    @param [in] myYStart The y-coordinate for the text instance.
-    @param [in] myFontSize The font size of the text instance.
-    @param [in] myTextColor The color of the text instance. Default color is WHITE.
+    @param  myText The text that is to be drawn.
+    @param  myXStart The x-coordinate for the text instance.
+    @param  myYStart The y-coordinate for the text instance.
+    @param  myFontSize The font size of the text instance.
+    @param  myTextColor The color of the text instance. Default color is WHITE.
     */
     void setValues(char* myText, int myXStart, int myYStart, int myFontSize, unsigned int myTextColor);
 
     /*!
     @brief Sets the text of the string instance.
-    @param [in] myText The text that is to be drawn.
+    @param  myText The text that is to be drawn.
     */
     void setText(char*);
 
@@ -173,7 +177,7 @@ class TouchScreenString : public TouchScreenText {
 ----------------------------------------------------------------
 */
 
-///@class TouchScreenChar 
+///@class TouchScreenChar
 ///@brief Subclass of TouchScreenText.  Abstract class used for drawing char's to the touch screen.
 class TouchScreenChar : public TouchScreenText {
  public:
@@ -184,33 +188,33 @@ class TouchScreenChar : public TouchScreenText {
 
     /*!
     @brief Copy constructor for the TouchScreenString subclass.
-    @param [in] otherTouchScreenChar The char instance that is being copied.
+    @param  otherTouchScreenChar The char instance that is being copied.
     */
     TouchScreenChar(TouchScreenChar& otherTouchScreenChar);
 
     /*!
     @brief Parameter constructor for the TouchScreenString superclass.
-    @param [in] myText The char that is to be drawn.
-    @param [in] myXStart The x-coordinate for the char instance.
-    @param [in] myYStart The y-coordinate for the char instance.
-    @param [in] myFontSize The font size of the char instance.
-    @param [in] myTextColor The color of the char instance.
+    @param  myText The char that is to be drawn.
+    @param  myXStart The x-coordinate for the char instance.
+    @param  myYStart The y-coordinate for the char instance.
+    @param  myFontSize The font size of the char instance.
+    @param  myTextColor The color of the char instance.
     */
     TouchScreenChar(char myText, int myXStart, int myYStart, int myFontSize, unsigned int myTextColor);
 
     /*!
     @brief Sets the char, cooordinates, font size, and char color.
-    @param [in] myText The char that is to be drawn.
-    @param [in] myXStart The x-coordinate for the char instance.
-    @param [in] myYStart The y-coordinate for the char instance.
-    @param [in] myFontSize The font size of the char instance.
-    @param [in] myTextColor The color of the char instance.
+    @param  myText The char that is to be drawn.
+    @param  myXStart The x-coordinate for the char instance.
+    @param  myYStart The y-coordinate for the char instance.
+    @param  myFontSize The font size of the char instance.
+    @param  myTextColor The color of the char instance.
     */
     void setValues(char myText, int myXStart, int myYStart, int myFontSize, unsigned int myTextColor);
 
     /*!
     @brief Sets the text of the char instance.
-    @param [in] myText The char that is to be drawn.
+    @param  myText The char that is to be drawn.
     */
     void setText(char myText);
 
