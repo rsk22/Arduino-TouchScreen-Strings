@@ -29,7 +29,7 @@ note that that the following custom library is required.
 The code was thoroughly documented using DOxygen. Please see the HTML folder for detailed code documentation.
 
 ## Examples/Tutorials:
-In progress...
+See TouchScreenStrings_example.ino 
 
 ## Bugs:
 There are no known bugs at this time.  If you see any bugs, please contact me and I will do my best to resolve them.  
