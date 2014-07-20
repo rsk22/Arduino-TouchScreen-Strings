@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['textbuttondisplay',['textButtonDisplay',['../class_touch_screen_string.html#a56d10098496bd88e0c60daf543447576',1,'TouchScreenString::textButtonDisplay()'],['../class_touch_screen_char.html#a099d277a6fc4510e93f02089070ca6f2',1,'TouchScreenChar::textButtonDisplay()']]],
-  ['textcolor',['textColor',['../class_touch_screen_text.html#a0b555c473dff7436a79c836926235217',1,'TouchScreenText']]],
-  ['touchscreenchar',['TouchScreenChar',['../class_touch_screen_char.html',1,'TouchScreenChar'],['../class_touch_screen_char.html#a712dee575d947e58a776be559d33dc3f',1,'TouchScreenChar::TouchScreenChar()'],['../class_touch_screen_char.html#a16271426fbf961392b6439c42c110c67',1,'TouchScreenChar::TouchScreenChar(TouchScreenChar &amp;otherTouchScreenChar)'],['../class_touch_screen_char.html#a2a0a141a1d9b65b54031eea6317c2a63',1,'TouchScreenChar::TouchScreenChar(char myText, int myXStart, int myYStart, int myFontSize, unsigned int myTextColor)']]],
-  ['touchscreenstring',['TouchScreenString',['../class_touch_screen_string.html',1,'TouchScreenString'],['../class_touch_screen_string.html#ac6041c6c845b2286efee96cbc4b5473f',1,'TouchScreenString::TouchScreenString()'],['../class_touch_screen_string.html#a32ccd512fd5ef6a1aefa14d1e7552afb',1,'TouchScreenString::TouchScreenString(TouchScreenString &amp;otherTouchScreenString)'],['../class_touch_screen_string.html#a225634c4816f8988343c9a9491cf27fb',1,'TouchScreenString::TouchScreenString(char *myText, int myXStart, int myYStart, int myFontSize, unsigned int myTextColor)']]],
-  ['touchscreentext',['TouchScreenText',['../class_touch_screen_text.html',1,'TouchScreenText'],['../class_touch_screen_text.html#ab4eb34ba6e6d41dbcbc00377f497efb8',1,'TouchScreenText::TouchScreenText()'],['../class_touch_screen_text.html#a4603c93a9419c4a7ab81b24d7a925a7b',1,'TouchScreenText::TouchScreenText(int, int, int, unsigned int)']]]
+  ['setfontsize',['setFontSize',['../class_touch_screen_text.html#a33600a62cba3fa1e34b9bd8e8149d6ba',1,'TouchScreenText']]],
+  ['settext',['setText',['../class_touch_screen_string.html#a7d32e2262e4ea1009b029c0ae8b45897',1,'TouchScreenString::setText()'],['../class_touch_screen_char.html#a3193c7b27aee874a21cdf86a39da6b61',1,'TouchScreenChar::setText()']]],
+  ['settextcolor',['setTextColor',['../class_touch_screen_text.html#a5a1bbd3e035ec114da0a341dad341461',1,'TouchScreenText']]],
+  ['settextcoord',['setTextCoord',['../class_touch_screen_text.html#afc8d11263b754c34df753ed4a1f4ed95',1,'TouchScreenText']]],
+  ['setvalues',['setValues',['../class_touch_screen_string.html#ad797bc5369aaace58de46bca39ae83dd',1,'TouchScreenString::setValues()'],['../class_touch_screen_char.html#a1cd1be7f6a6f0b7eefe198c70f799dce',1,'TouchScreenChar::setValues()']]]
 ];

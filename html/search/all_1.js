@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fontsize',['fontSize',['../class_touch_screen_text.html#a098422c325ce23c6d28d2b72ffb52a1a',1,'TouchScreenText']]]
+  ['erasetext',['eraseText',['../class_touch_screen_string.html#a86bf996577b02c584624138bc314f641',1,'TouchScreenString::eraseText()'],['../class_touch_screen_char.html#ad8dc87be9c9fe99467c4129d9c84aa4f',1,'TouchScreenChar::eraseText()']]]
 ];
