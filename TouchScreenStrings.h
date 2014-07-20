@@ -43,27 +43,27 @@ public:
 
     /*!
     @brief Parameter constructor for the TouchScreenText superclass
-    @param  myXStart The x-coordinate for the text instance.
-    @param  myYStart The y-coordinate for the text instance.
-    @param  myFontSize The font size of the text instance.
-    @param  myTextColor The color of the text instance. Default color is WHITE.
+    @param  myXStart    The x-coordinate for the text instance.
+    @param  myYStart    The y-coordinate for the text instance.
+    @param  myFontSize  The font size of the text instance.
+    @param  myTextColor     The color of the text instance. Default color is WHITE.
     */
 
-    TouchScreenText(int, int, int, unsigned int);
+    TouchScreenText(const int myXStart, const int myYStart, const int myFontSize, unsigned int myTextColor);
 
     /*!
     @brief Sets the coordinates of the text.
-    @param  myXStart The x-coordinate for the text instance.
-    @param  myYStart The y-coordinate for the text instance.
+    @param  myXStart    The x-coordinate for the text instance.
+    @param  myYStart    The y-coordinate for the text instance.
     */
 
-    void setTextCoord(int, int);
+    void setTextCoord(const int myXStart, const int myYStart);
 
     /*!
     @brief Sets the font size of the text.
-    @param  myFontSize The font size of the text instance.
+    @param  myFontSize  The font size of the text instance.
     */
-    void setFontSize(int myFontSize = 2);
+    void setFontSize(const int myFontSize = 2);
 
     /*!
     @brief Sets the color of the text.

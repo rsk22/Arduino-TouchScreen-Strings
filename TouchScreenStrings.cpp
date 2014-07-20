@@ -31,21 +31,21 @@ TouchScreenText::TouchScreenText(TouchScreenText& otherTouchScreenText)
 }
 
 
-TouchScreenText::TouchScreenText(int myXStart, int myYStart, int myFontSize, unsigned int myTextColor)
+TouchScreenText::TouchScreenText(const int myXStart, const int myYStart, const int myFontSize, unsigned int myTextColor)
     : xstart(myXStart), ystart(myYStart), fontSize(myFontSize), textColor(myTextColor)
 {
 
 }
 
 
-void TouchScreenText::setTextCoord(int myXStart, int myYStart)
+void TouchScreenText::setTextCoord(const int myXStart, const int myYStart)
 {
    xstart = myXStart;
    ystart = myYStart;
 }
 
 
-void TouchScreenText::setFontSize(int myFontSize)
+void TouchScreenText::setFontSize(const int myFontSize)
 {
    fontSize = myFontSize;
 }
