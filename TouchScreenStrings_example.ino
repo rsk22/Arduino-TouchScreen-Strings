@@ -9,7 +9,6 @@
 #include <stdint.h>  
 #include <TouchScreen.h>  // Library for the Seeed Studio TFT Touch Shield 
 #include <TFT.h>      // Library for the Seeed Studio TFT Touch Shield 
-#include <Password.h> // http://www.arduino.cc/playground/uploads/Code/Password.zip
 #include <TouchScreenStrings.h> // Library for drawing strings for the keypad
 
 #ifdef SEEEDUINO
