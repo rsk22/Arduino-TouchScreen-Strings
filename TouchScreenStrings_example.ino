@@ -1,5 +1,5 @@
 /* 
-  Title: TouchScreenGeometry Tutorial
+  Title: TouchScreenStrings Tutorial
   About: Example/tutorial file for how to create strings and chars with the TouchScreenStrings library
   Author: Richard Kirkpatrick
   Date: 20 July 2014
