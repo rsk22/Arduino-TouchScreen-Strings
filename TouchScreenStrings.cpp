@@ -137,15 +137,11 @@ void TouchScreenString::drawText()
    Tft.drawString(text, xstart, ystart, fontSize, textColor);
 }
 
-
-void TouchScreenString::textButtonDisplay()
+void TouchScreenString::eraseText()
 {
-   setTextColor(0xf800); ///< Sets the color to red
-   drawText();
-   delay(100);
-   setTextColor(0xffff); ///< Sets the color to white
-   drawText();
+    Tft.drawString(text, xstart, ystart, fontSize, 0x0000);
 }
+
 
 /*
 ----------------------------------------------------------------
@@ -203,13 +199,10 @@ void TouchScreenChar::drawText()
    Tft.drawChar(text, xstart, ystart, fontSize, textColor);
 }
 
-
-void TouchScreenChar::textButtonDisplay()
+void TouchScreenChar::eraseText()
 {
-   setTextColor(0xf800); ///< Sets the color to red
-   drawText();
-   delay(100);
-   setTextColor(0xffff); ///< Sets the color to white
-   drawText();
+    Tft.drawChar(text, xstart, ystart, fontSize, 0x0000);
 }
+
+
 

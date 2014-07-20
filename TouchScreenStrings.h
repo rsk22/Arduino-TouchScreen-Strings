@@ -157,15 +157,11 @@ class TouchScreenString : public TouchScreenText {
     */
     const char* getText();
 
-    /*!
-    @brief Uses the TFT library to draw the string instance.
-    */
+    ///@brief Uses the TFT library to draw the string instance.
     void drawText();
 
-    /*!
-    @brief Highlights the button text when pressed.
-    */
-    void textButtonDisplay();
+    ///@brief Erases the text
+    void eraseText();
 
  private:
     char* text;
@@ -227,8 +223,8 @@ class TouchScreenChar : public TouchScreenText {
     ///@brief Uses the Seeed Studio library to draw the char.
     void drawText();
 
-    ///@brief Highlights the button text when pressed.
-    void textButtonDisplay();
+    ///@brief Erases the text
+    void eraseText();
 
  private:
     char text;
