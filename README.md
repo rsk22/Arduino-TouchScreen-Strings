@@ -14,10 +14,8 @@ The user can create geometric shapes which include polygons, triangles, squares 
 a tutorial on how to do this. The code documentation under the HTML folder also contains the code documentation as well.
 
 ## Required Files:
-I assume you have all the necessary libraries to run basic programs on the Seeed Studio Touch Screen (i.e. TFT).  However, 
-note that that the following custom library is required.  
-
-1. TouchScreen (Link: http://www.ladyada.net/library/arduino/libraries.html )
+The TFT library comes with the standard Arduino library.  However, you will also need the following library:
+1. TouchScreen library (Link: https://github.com/adafruit/Touch-Screen-Library )
 
 ## Installation Instructions:
 1. Download the zipfile.
