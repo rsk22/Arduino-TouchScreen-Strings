@@ -10,7 +10,7 @@ screen hardware:
 
 http://www.seeedstudio.com/wiki/2.8''_TFT_Touch_Shield_V1.0
 
-The user can create geometric shapes which include polygons, triangles, squares and circles.  See the example file for 
+The user can create geometric shapes which includes polygons, triangles, squares and circles.  See the example file for 
 a tutorial on how to do this. The code documentation under the HTML folder also contains the code documentation as well.
 
 ## Required Files:
@@ -37,6 +37,12 @@ You may also feel free to resolve them yourself.  Just check with me before you 
 We become better programmers by always looking for ways to improve our code.  Thus, I will always look for ways to 
 improve this code.  If you have any suggestions for improvement or would like to make improvements yourself, 
 please let me know.
+
+Current planned upgrades are:
+1. Add rotation methods to Polygon class.
+2. Update move methods so that the movement appears more smoother.
+3. Add ellipse class.
+4. Add fill methods to all geometric classes (Polygon, Triangle, etc.).
 
 
 
