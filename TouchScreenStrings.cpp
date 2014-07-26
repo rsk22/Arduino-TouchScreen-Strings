@@ -126,7 +126,7 @@ void TouchScreenString::setText(char* myText)
 }
 
 
-const char* TouchScreenString::getText()
+char* TouchScreenString::getText()
 {
    return text;
 }

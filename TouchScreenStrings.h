@@ -149,13 +149,13 @@ class TouchScreenString : public TouchScreenText {
     @brief Sets the text of the string instance.
     @param  myText The text that is to be drawn.
     */
-    void setText(char*);
+    void setText(char* myText);
 
     /*!
     @brief Returns the text of the string instace.
     @return text The text that is to be drawn.
     */
-    const char* getText();
+    char* getText();
 
     ///@brief Uses the TFT library to draw the string instance.
     void drawText();
